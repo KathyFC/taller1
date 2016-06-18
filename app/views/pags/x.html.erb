@@ -1,2 +1,18 @@
 <h1>Katherine F. Castaneda</h1>
 <p>Find me in app/views/pags/x.html.erb</p>
+
+<div>
+<h1> Formulario </h1>
+<!--<%= params %>-->
+<form method="POST" action="<%=some_path%>">
+<%= hidden_field_tag :authenticity_token,form_authenticity_token %>
+ <label>Name</label><br><input name="name"> <br>
+ <label>Mail</label><br><input name="mail"><br>
+ <label>Age</label><br><input name="age"> <br>
+ <input type="submit" value="Enviar">
+</form>
+
+	<br><br>
+	<%= flash[:notice]%>
+	
+</div>	

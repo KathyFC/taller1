@@ -11,4 +11,8 @@ class PagsController < ApplicationController
 			redirect_to pags_x_path, notice:"User was saved succesfully"
 	end
   end
+
+  def landing
+  	render layout: 'layout2'
+  end
 end
